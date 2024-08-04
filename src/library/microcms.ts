@@ -1,5 +1,7 @@
 //SDK利用準備
-import type { MicroCMSQueries } from "microcms-js-sdk";
+import type {
+  MicroCMSQueries
+} from "microcms-js-sdk";
 import { createClient } from "microcms-js-sdk";
 
 const client = createClient({
@@ -16,6 +18,14 @@ export type Blog = {
   revisedAt: string;
   title: string;
   content: string;
+  category: {
+    name: string;
+  };
+  eyecatch: {
+    url: string;
+    height: number;
+    width: number;
+  };
 };
 export type BlogResponse = {
   totalCount: number;
