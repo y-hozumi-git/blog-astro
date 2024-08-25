@@ -130,7 +130,7 @@ const response = await getBlogs({ fields: ["id", "title", "eyecatch"] });
         <section class="posts">
           {blogs.map((blog) => {
             return (
-              <a class="post-card" href={`/blog/${blog.id}`}>
+              <a class="post-card" href={`/cms/${blog.id}`}>
                 <img
                   src={blog.eyecatch.url}
                   height="300"
