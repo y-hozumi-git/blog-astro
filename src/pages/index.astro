@@ -2,7 +2,9 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Main from '../components/Main.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
 ---
 
 <!doctype html>
@@ -12,21 +14,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 	<body>
 		<Header />
-		<main>
-			<h3>
-				個人ブログ開設
-			</h3>
-			<div>
-				<h4>
-					使用技術
-				</h4>
-				<ul>
-					<li>Astro</li>
-					<li>MicroCMS</li>
-					<li>Cloudflare</li>
-				</ul>
-			</div>
-		</main>
+		<Main />
 		<Footer />
 	</body>
 </html>
